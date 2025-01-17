@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #ff4b5c, #ff80ab);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-top: 30px;
+            padding: 10px;
+            animation: fadeIn 2s;
+        }
+        .photo-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px auto;
+            width: 90%;
+            flex-wrap: wrap;
+        }
+        .photo-gallery img {
+            width: 30%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .photo-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .button {
+            margin: 20px auto;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            color: #fff;
+            background: #ff4b5c;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        .button:hover {
+            background: #ff3366;
+        }
+        .poem-container {
+            position: relative;
+            margin: 20px auto;
+            max-width: 90%;
+            padding: 20px;
+        }
+        .poem-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(../Birthday/tanu2.png);
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px);
+            z-index: 0;
+            border-radius: 15px;
+        }
+        .poem {
+            position: relative;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 1.8;
+            text-align: center;
+            z-index: 1;
+        }
+        video {
+            margin: 20px auto;
+            width: 80%;
+            height: auto;
+            max-width: 800px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                font-size: 2rem;
+                padding: 5px;
+            }
+            .photo-gallery img {
+                width: 90%;
+            }
+            .button {
+                font-size: 1rem;
+                padding: 10px 20px;
+            }
+            .poem-container {
+                padding: 15px;
+            }
+            .poem {
+                font-size: 1.2rem;
+            }
+            video {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 1.5rem;
+            }
+            .photo-gallery img {
+                width: 100%;
+            }
+            .button {
+                font-size: 0.9rem;
+                padding: 8px 15px;
+            }
+            .poem {
+                font-size: 1rem;
+            }
+            video {
+                width: 95%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Autoplay audio -->
+    <audio id="birthday-audio" autoplay loop>
+        <source src="../Birthday/happy-birthday-254480.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Rest of your HTML -->
+    <header>Happy Birthday, My Love, Tanushri! ❤️</header>
+    <div class="photo-gallery">
+        <img src="../Birthday/Tanu1.png" alt="Photo 1">
+        <img src="../Birthday/tanu3.jpg" alt="Photo 2">
+    </div>
+    <button class="button" onclick="showPoem()">Reveal a Poem</button>
+    <video autoplay muted loop>
+        <source src="https://static.vecteezy.com/system/resources/previews/038/095/161/mp4/ai-generated-birthday-cake-with-candles-and-presents-on-a-blue-background-video.mp4" type="video/mp4">
+    </video>
+    <div id="poem-container" class="poem-container" style="display: none;">
+        <div class="poem">
+            शेगावच्या भेटीतला तो गोड क्षण। <br>
+            तुझं हसणं, तुझं बोलणं, ती गोडशी नजर, <br>
+            सारेच आठवतं, जणू स्वप्नांचा कळसगर। <br><br>
+
+            तू माझ्या सोबत होतीस, ती वेळ खास, <br>
+            त्या रस्त्यानं फिरताना वाढला विश्वास। <br>
+            तू समजावलं होतंस, मार्क्स कमी पडले तरी, <br>
+            आयुष्य जिंकायचं, स्वप्नांच्या लयीवरी। <br><br>
+
+            तुझं माझ्यावरचं प्रेम, तू दिलेली साथ, <br>
+            आयुष्यभर असेल माझ्या आठवणींची गाठ। <br><br>
+
+            मी आजही तेच म्हणेन, तुझी आठवण हृदयात बसते, <br>
+            तनुश्री, मला खरंच खूप आवडतेस... आणि **I Love You**। <br><br>
+
+            जास्त काही अपेक्षा नाही माझी तुझ्याकडून, <br>
+            फक्त माझ्या हातात तुझा हात आणि <br>
+            आयुष्यभराची हवी साथ। <br><br>
+
+            तुझ्या वाढदिवशी तुला माझं एकच वचन, <br>
+            नेहमीच राहीन मी तुझा सखा। <br><br>
+
+            साथ माझी तुला प्रिये <br>
+            शेवटच्या श्वासापर्यंत असेल। <br>
+            नाही सोडणार हात तुझा <br>
+            जोपर्यंत प्राण माझ्यात असेल। <br><br>
+
+            *वाढदिवसाच्या हार्दिक शुभेच्छा Pillu💕!*
+        </div>
+    </div>
+
+    <script>
+        // Ensure the audio starts playing
+        document.addEventListener("DOMContentLoaded", function () {
+            const audio = document.getElementById("birthday-audio");
+            const playAudio = () => {
+                audio.play().catch(() => {
+                    console.log("User interaction required to play audio.");
+                });
+            };
+
+            // Try to play immediately
+            playAudio();
+
+            // Add fallback for user interaction
+            document.body.addEventListener("click", playAudio, { once: true });
+        });
+
+        // Show the poem
+        function showPoem() {
+            document.getElementById('poem-container').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
